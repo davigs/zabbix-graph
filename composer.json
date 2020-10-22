@@ -1,22 +1,21 @@
 {
-    "name": "casperboone/zabbix-graph",
+    "name": "davigs/zabbix-graph",
     "description": "Get nice looking graphs of your Zabbix devices.",
     "keywords": [
         "Zabbix Graph"
     ],
-    "homepage": "https://github.com/casperboone/zabbix-graph",
+    "homepage": "https://github.com/davigs/zabbix-graph",
     "license": "MIT",
     "authors": [
         {
-            "name": "Casper Boone",
-            "email": "mail@casperboone.nl",
-            "homepage": "https://casperboone.nl",
+            "name": "Davi Gomes",
+            "email": "davigomess@gmail.com",
             "role": "Developer"
         }
     ],
     "require": {
-        "php": "^7.0",
-        "guzzlehttp/guzzle": "~6.1"
+        "php": "^7.3",
+        "guzzlehttp/guzzle": "^7.0.1"
     },
     "require-dev": {
         "mockery/mockery": "^0.9.9",
