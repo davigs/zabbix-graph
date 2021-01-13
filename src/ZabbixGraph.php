@@ -66,8 +66,10 @@ class ZabbixGraph
                 'graphid' => $graphId,
                 'width' => $this->width,
                 'height' => $this->height,
-                'stime' => $this->startTime->getTimestamp(),
-                'period' => $this->endTime->getTimestamp() - $this->startTime->getTimestamp(),
+                'from' => $this->startTime->format('Y-m-d H:i:s'),
+                'to' => $this->endTime->format('Y-m-d H:i:s'),
+                'profileIdx' => 'web.charts.filter',
+                'profileIdx2' => $graphId
             ],
         ])->getBody()->getContents();
     }
